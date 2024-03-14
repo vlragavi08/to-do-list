@@ -6,13 +6,7 @@ const MaxTodoLimitBug = () => {
   const [checkedTodos, setCheckedTodos] = useState({});
 
   const handleInputChange = (event) => {
-    const inputValue = event.target.value;
-    if (inputValue.length > 10) {
-      alert('You are exceeding the character limit!');
-      setTodoValue(inputValue.slice(0, 10));
-    } else {
-      setTodoValue(inputValue);
-    }
+    setTodoValue(event.target.value);
   };
 
   const addTodo = () => {
@@ -24,8 +18,8 @@ const MaxTodoLimitBug = () => {
     const newTodo = { id: newId, text: todoValue };
 
     setTodos([...todos, newTodo]);
-    setCheckedTodos({ ...checkedTodos, [newId]: false }); 
-    setTodoValue(''); 
+    setCheckedTodos({ ...checkedTodos, [newId]: false });
+    setTodoValue('');
   };
 
   const deleteTodo = (idToDelete) => {
