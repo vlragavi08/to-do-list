@@ -1,3 +1,4 @@
+THESE BUGS WERE RESOLVED
 ## Bug 1: Delete button not working
 **Description:** When attempting to delete a task using the delete button, it fails to remove the task from the list. This results in the inability to properly manage or remove tasks from the todo list.
 **Impact:** Users are unable to efficiently manage their todo list, leading to clutter and difficulty in organizing tasks.
